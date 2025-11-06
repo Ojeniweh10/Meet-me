@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import authRoutes from "./routes/auth.routes.js";
-import messageRoutes from "./routes/message.routes.js";
+import authRoutes from "./routes/auth.route.js";
+import messageRoutes from "./routes/message.route.js";
 dotenv.config();
 const PORT = process.env.PORT || 3000; //using 3000 as default value in case env file is unavailable
 const HOST = "localhost";
