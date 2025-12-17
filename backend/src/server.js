@@ -5,9 +5,10 @@ import messageRoutes from "./routes/message.route.js";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
 import { connectDB } from "./lib/db.js";
+import { ENV } from "./lib/env.js";
 
 dotenv.config();
-const PORT = process.env.PORT || 3000; //using 3000 as default value in case env file is unavailable
+const PORT = ENV.PORT || 3000; //using 3000 as default value in case env file is unavailable
 const app = express();
 
 // ---------- CORS Setup ----------
